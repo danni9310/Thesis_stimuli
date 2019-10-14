@@ -74,7 +74,7 @@
 					<TypeIdentifier>(0x330306dd, 0x74a95f98)</TypeIdentifier>
 					<Name>Filename</Name>
 					<DefaultValue>record-[$core{date}-$core{time}].csv</DefaultValue>
-					<Value>D:/UDEA-MAESTRIA/Result/Recordings/images.csv</Value>
+					<Value>D:/UDEA-MAESTRIA/Thesis result/Set Stimuli/OpenDesigner/Recordings csv/images.csv</Value>
 					<Modifiability>false</Modifiability>
 				</Setting>
 				<Setting>

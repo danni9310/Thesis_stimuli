@@ -74,7 +74,7 @@
 					<TypeIdentifier>(0x330306dd, 0x74a95f98)</TypeIdentifier>
 					<Name>Filename</Name>
 					<DefaultValue>record-[$core{date}-$core{time}].csv</DefaultValue>
-					<Value>D:/UDEA-MAESTRIA/Result/Recordings/field_right.csv</Value>
+					<Value>D:/UDEA-MAESTRIA/Thesis result/Set Stimuli/OpenDesigner/Recordings csv/field_both.csv</Value>
 					<Modifiability>false</Modifiability>
 				</Setting>
 				<Setting>
@@ -415,7 +415,7 @@
 					<TypeIdentifier>(0xb0d0db45, 0x49cbc34a)</TypeIdentifier>
 					<Name>Script</Name>
 					<DefaultValue></DefaultValue>
-					<Value>D:/UDEA-MAESTRIA/Result/Set Stimuli/OpenDesigner/fieldCode.py</Value>
+					<Value>D:/UDEA-MAESTRIA/Thesis result/Set Stimuli/OpenDesigner/fieldCode.py</Value>
 					<Modifiability>false</Modifiability>
 				</Setting>
 			</Settings>
@@ -644,6 +644,17 @@
 	</Boxes>
 	<Links>
 		<Link>
+			<Identifier>(0x000007b4, 0x0000109e)</Identifier>
+			<Source>
+				<BoxIdentifier>(0x00003127, 0x00005d25)</BoxIdentifier>
+				<BoxOutputIndex>1</BoxOutputIndex>
+			</Source>
+			<Target>
+				<BoxIdentifier>(0x00003f32, 0x0000429a)</BoxIdentifier>
+				<BoxInputIndex>0</BoxInputIndex>
+			</Target>
+		</Link>
+		<Link>
 			<Identifier>(0x0000095c, 0x00002f94)</Identifier>
 			<Source>
 				<BoxIdentifier>(0x00005777, 0x00006c1c)</BoxIdentifier>
@@ -652,6 +663,17 @@
 			<Target>
 				<BoxIdentifier>(0x00004db4, 0x00006a35)</BoxIdentifier>
 				<BoxInputIdentifier>(0x0060b649, 0xb972f06c)</BoxInputIdentifier>
+			</Target>
+		</Link>
+		<Link>
+			<Identifier>(0x00003325, 0x000072fc)</Identifier>
+			<Source>
+				<BoxIdentifier>(0x00003127, 0x00005d25)</BoxIdentifier>
+				<BoxOutputIndex>1</BoxOutputIndex>
+			</Source>
+			<Target>
+				<BoxIdentifier>(0x0000155f, 0x0000527d)</BoxIdentifier>
+				<BoxInputIndex>0</BoxInputIndex>
 			</Target>
 		</Link>
 		<Link>
@@ -677,17 +699,6 @@
 			</Target>
 		</Link>
 		<Link>
-			<Identifier>(0x00004869, 0x00001dc1)</Identifier>
-			<Source>
-				<BoxIdentifier>(0x00003127, 0x00005d25)</BoxIdentifier>
-				<BoxOutputIndex>1</BoxOutputIndex>
-			</Source>
-			<Target>
-				<BoxIdentifier>(0x0000155f, 0x0000527d)</BoxIdentifier>
-				<BoxInputIndex>0</BoxInputIndex>
-			</Target>
-		</Link>
-		<Link>
 			<Identifier>(0x00005500, 0x000003db)</Identifier>
 			<Source>
 				<BoxIdentifier>(0x00005777, 0x00006c1a)</BoxIdentifier>
@@ -695,17 +706,6 @@
 			</Source>
 			<Target>
 				<BoxIdentifier>(0x00000fdd, 0x00007f83)</BoxIdentifier>
-				<BoxInputIndex>0</BoxInputIndex>
-			</Target>
-		</Link>
-		<Link>
-			<Identifier>(0x00005e10, 0x000048f5)</Identifier>
-			<Source>
-				<BoxIdentifier>(0x00003127, 0x00005d25)</BoxIdentifier>
-				<BoxOutputIndex>1</BoxOutputIndex>
-			</Source>
-			<Target>
-				<BoxIdentifier>(0x00003f32, 0x0000429a)</BoxIdentifier>
 				<BoxInputIndex>0</BoxInputIndex>
 			</Target>
 		</Link>

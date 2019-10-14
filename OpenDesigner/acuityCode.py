@@ -4,7 +4,7 @@ import pygame
 import sys
 
 sys.argv = ['openvibe']
-path_initial = r'D:\UDEA-MAESTRIA\Result\Set Stimuli\OpenDesigner\Acuity_image/'
+path_initial = r'Acuity_image/'
 scale_acuity = ['A5.8', 'A2.9', 'A1.8', 'A1.1', 'A0.7', 'A0.4', 'A0.2']
 time_initial = 4
 time_stimuli = 4*len(scale_acuity)  # Each stimuli take 4 s
@@ -55,8 +55,8 @@ class Change(OVProcess):
         pygame.display.set_caption(self.name)
         self.screen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
         #self.screen = pygame.display.set_mode((640, 480))
-        self.img = pygame.image.load(r'D:\UDEA-MAESTRIA\Result\Set Stimuli\OpenDesigner\Acuity_image/A5.8.png')
-        self.img2 = pygame.image.load(r'D:\UDEA-MAESTRIA\Result\Set Stimuli\OpenDesigner\Acuity_image/0.png')
+        self.img = pygame.image.load(r'Acuity_image/A5.8.png')
+        self.img2 = pygame.image.load(r'Acuity_image/0.png')
 
     def image_change(self, path):
         self.img = pygame.image.load(path)

@@ -100,11 +100,15 @@
 			<Attributes>
 				<Attribute>
 					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
-					<Value>96</Value>
+					<Value>48</Value>
 				</Attribute>
 				<Attribute>
 					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
-					<Value>544</Value>
+					<Value>576</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x341d3912, 0x1478de86)</Identifier>
+					<Value>1</Value>
 				</Attribute>
 				<Attribute>
 					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
@@ -226,7 +230,7 @@
 					<TypeIdentifier>(0x330306dd, 0x74a95f98)</TypeIdentifier>
 					<Name>Filename</Name>
 					<DefaultValue>record-[$core{date}-$core{time}].csv</DefaultValue>
-					<Value>D:/UDEA-MAESTRIA/Result/Recordings/resting.csv</Value>
+					<Value>D:/UDEA-MAESTRIA/Thesis result/Set Stimuli/OpenDesigner/Recordings csv/resting.csv</Value>
 					<Modifiability>false</Modifiability>
 				</Setting>
 				<Setting>
@@ -481,24 +485,24 @@
 			</Target>
 		</Link>
 		<Link>
-			<Identifier>(0x000039eb, 0x00001570)</Identifier>
-			<Source>
-				<BoxIdentifier>(0x000038c9, 0x00002cba)</BoxIdentifier>
-				<BoxOutputIndex>1</BoxOutputIndex>
-			</Source>
-			<Target>
-				<BoxIdentifier>(0x00003f32, 0x0000429a)</BoxIdentifier>
-				<BoxInputIndex>0</BoxInputIndex>
-			</Target>
-		</Link>
-		<Link>
-			<Identifier>(0x0000623d, 0x00007467)</Identifier>
+			<Identifier>(0x00005c8d, 0x000042b7)</Identifier>
 			<Source>
 				<BoxIdentifier>(0x000038c9, 0x00002cba)</BoxIdentifier>
 				<BoxOutputIndex>1</BoxOutputIndex>
 			</Source>
 			<Target>
 				<BoxIdentifier>(0x000041c6, 0x00002770)</BoxIdentifier>
+				<BoxInputIndex>0</BoxInputIndex>
+			</Target>
+		</Link>
+		<Link>
+			<Identifier>(0x000063e7, 0x00004dc1)</Identifier>
+			<Source>
+				<BoxIdentifier>(0x000038c9, 0x00002cba)</BoxIdentifier>
+				<BoxOutputIndex>1</BoxOutputIndex>
+			</Source>
+			<Target>
+				<BoxIdentifier>(0x00003f32, 0x0000429a)</BoxIdentifier>
 				<BoxInputIndex>0</BoxInputIndex>
 			</Target>
 		</Link>
