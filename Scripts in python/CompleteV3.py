@@ -68,103 +68,9 @@ for i in range(0, 3):
 print('Final time:' + str(time.time()-timer_init))
 
 
-        
-#%% Script for form 1
 
 
-timer = time.time()
-time_to_wait = 10
-
-
-# Screen size
-width = 1680
-height = 1050
-black = (0, 0, 0)
-white = (250, 250, 250)
-
-# Reset time
-timer = time.time()
-time_last = 0
-state = False
-cont = 1
-wait = False
-
-scale_transform = 0.1
-scale = 1
-screen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
-pygame.init()
-screen.fill(black)
-pygame.draw.rect(screen, white, [0, 0, 10, 10])
-pygame.display.flip()
-
-
-while not wait :
-    for event in pygame.event.get():
-        if event.type == pygame.KEYDOWN and event.key == pygame.K_SPACE:
-            wait = True
-            active = True
-            state = True
-
-timer_init = time.time()
-
-
-for k in range(0, 3):
-    timer_init = time.time()
-    if active:
-        #status_process()
-        timer = time.time()
-        for i in range(1,5):
-            screen.fill((255, 255, 255))
-            imagen = './Formas/' + str(k) + '/' + str(i) + '.png'
-            img = pygame.image.load(imagen)
-            img_width = int(img.get_width())
-            img_height = int(img.get_height())
-            img = pygame.transform.scale(img, (img_width, img_height))
-            position_x = width / 2 - img.get_width() // 2
-            position_y = height / 2 - img.get_height() // 2
-            screen.blit(img, (position_x, position_y))
-            pygame.display.flip()
-            time.sleep(3)
-        time_last = time.time() - timer
-        #print(time_last)
-        timer = time.time()
-        for j in range(5,12):
-            imagen = './Formas/' + str(k) + '/' + str(j) + '.png'
-            img = pygame.image.load(imagen)
-            clock = pygame.time.Clock()
-            state = True
-            scale = 1
-            while state:
-                screen.fill((255, 255, 255))
-                scale -= scale_transform
-                img_width = int(img.get_width()*scale)
-                img_height = int(img.get_height()*scale)
-                if img_width <= 10 or img_height <= 10:
-                    state = False
-                img = pygame.transform.scale(img, (img_width, img_height))
-                position_x = width / 2 - img.get_width() // 2
-                position_y = height / 2 - img.get_height() // 2
-                screen.blit(img, (position_x, position_y))
-                pygame.display.flip()
-                clock.tick(2)
-        time_last = time.time() - timer
-        print(time_last)
-        #print('Final time:' + str(time.time()-timer_init))
-        """Time to wait """
-        timer = time.time()
-        time_last = 0
-    
-        while time_last <= time_to_wait:
-            #status_process()
-            screen.fill(black)
-            pygame.display.flip()
-            time_last = time.time() - timer
-    
-        print (time_last)
-
-print('Final time:' + str(time.time()-timer_init))
-
-#%% Script for form 2
+#%% Script for form 
 
 
 timer = time.time()
@@ -210,7 +116,7 @@ for k in range(0, 3):
         timer = time.time()
         for i in range(1,12):
             screen.fill((255, 255, 255))
-            imagen = './Formas2/' + str(k) + '/' + str(i) + '.png'
+            imagen = './Formas/' + str(k) + '/' + str(i) + '.png'
             img = pygame.image.load(imagen)
             img_width = int(img.get_width())
             img_height = int(img.get_height())
